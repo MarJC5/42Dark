@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20211206.19.46
+@version      20211206.20.59
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
@@ -18,6 +18,14 @@ textarea.form-control,
 	background-color: rgba(41, 45, 57, 0.80);
 }
 
+.menu-drop-item.dancer.read .menu-drop-text,
+.form-control,
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control,
+.projects-list-container .projects-list--header .projects-list--search,
+.main-navbar .main-navbar-user-nav .dropdown-menu > li > a,
+.application-item--detail .application-details,
 .main-navbar .main-navbar-search .searches-title,
 .articles-content,
 .text-agu,
@@ -124,10 +132,14 @@ h5,
 	-webkit-text-fill-color: #D8636F !important;
 }
 
+#read-notification-form,
 .btn-group > a {
 	-webkit-text-fill-color: #292d39 !important;
 }
 
+.notifications-container,
+.tt-menu,
+.application-item--detail .application-details,
 [aria-labelledby="Application options"] > li > a:hover,
 [aria-labelledby="Application options"],
 .container-item-nav-tab .nav-tabs > li.active > a,
@@ -151,12 +163,17 @@ h5,
 	border-color: #323F4B;
 }
 
-.tt-menu,
+.notification-item:hover,
+.vertical-list-item.notification-item.unread:hover,
+.menu-drop-item.dancer.read,
+.main-navbar .main-navbar-user-nav .dropdown-menu,
+.current.log-item,
 .achievement-item--content,
 .achievement-item--image,
-.tab-pane .achievement-item--container[data-done="true"], .container-inner-item.boxed .achievement-item--container {
+.tab-pane .achievement-item--container[data-done="true"],
+.container-inner-item.boxed .achievement-item--container {
 	border-color: #323F4B;
-	background-color: rgb(60,76,90) !important;
+	background-color: rgb(60, 76, 90) !important;
 }
 
 .achievement-progress-item .progress-container .progress {
@@ -173,6 +190,8 @@ h5,
 	background: #d8636f !important;
 }
 
+.btn-default,
+.btn-warning,
 .btn-success,
 .btn-info {
 	border-radius: 3px;
@@ -225,7 +244,6 @@ rect.highcharts-background {
 	fill: #292d39 !important;
 }
 
-.subnotions-list > .subnotion-item h5,
 .main-title .btn-group a.btn {
 	color: #292d39 !important;
 }
@@ -321,8 +339,10 @@ rect.highcharts-background {
 	fill: #FFF !important;
 }
 
+.container-breadcrumb .breadcrumb,
+.app-sidebar-right,
 #coalition-scores .table-striped > tbody > tr:nth-of-type(2n+1) {
-    background: #323F4B;
+	background: #323F4B;
 }
 
 #coalition-scores .text-left,
@@ -331,6 +351,10 @@ rect.highcharts-background {
 	color: #FFF;
 }
 
+.notion-grid > .notion-item,
+.notion-grid > .subnotion-item,
+.subnotion-grid > .notion-item,
+.subnotion-grid > .subnotion-item,
 [placeholder="Reason or user"] {
 	border-color: #323F4B;
 	border-radius: 3px;
@@ -344,6 +368,10 @@ rect.highcharts-background {
 	color: #FFF;
 }
 
+.projects-list-container .projects-list--list-header .project-item:hover,
+.projects-list-container .projects-list--list .project-item:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
 .table-list li.table-item:hover,
 .changelogs-list .changelog-item .changelog-main:hover,
 .team-item .team-repo .input-group input,
@@ -355,13 +383,38 @@ rect.highcharts-background {
 	fill: #00babc !important;
 }
 
+.main-navbar .main-navbar-user-nav .dropdown-menu,
 .table-list li.table-item:hover {
 	color: #FFF !important;
 	fill: #FFF !important;
 }
 
+.achievements-nav--filters .checkbox-inline input[type="checkbox"]:checked + label span {
+	background-color: #FFF !important;
+}
+
+.bootstrap-datetimepicker-widget,
 .expertise-list-item:hover,
 #event_search {
-	color: #292d39 !important;
+	background-color: #323F4B !important;
+}
+
+.Select--single > .Select-control .Select-value,
+.Select-placeholder,
+.form-control,
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control,
+.nav-pills.nav-stacked > li a:hover,
+.projects-list-container .projects-list--header .projects-list--search,
+.chosen-container-multi .chosen-choices {
+	background-color: #323F4B;
+	border-color: #292d39;
+	border-radius: 3px;
+}
+
+.Select--single > .Select-control .Select-value,
+.Select-placeholder {
+	border-radius: 0;
 }
 }
