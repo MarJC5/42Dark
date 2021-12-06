@@ -1,0 +1,228 @@
+/* ==UserStyle==
+@name         42Dark
+@version      20211206.10.38
+@namespace    userstyles.world/user/marjc5
+@description  This style will enable a Dark Mode in 42 network intranet.
+@author       marjc5
+@license      No License
+==/UserStyle== */
+
+@-moz-document url-prefix("https://profile.intra.42.fr/"),
+url-prefix("https://projects.intra.42.fr/"),
+url-prefix("https://elearning.intra.42.fr/"),
+url-prefix("https://companies.intra.42.fr/en/users/jmartin"),
+url-prefix("https://meta.intra.42.fr/"),
+url-prefix("https://shop.intra.42.fr/"),
+url-prefix("https://companies.intra.42.fr") {
+    [data-product-category="5"] {
+        display: none !important
+    }
+
+    .modal-content,
+    body {
+        background-color: rgba(41, 45, 57, 0.96);
+    }
+
+    textarea.form-control,
+    #smartModal {
+        background-color: rgba(41, 45, 57, 0.80);
+    }
+
+    [aria-labelledby="Application options"],
+    .main-navbar-search,
+    textarea.form-control,
+    .container-fluid.main table.table>tbody>tr>th,
+    .description-offer,
+    .container-inner-item,
+    .languages-lists,
+    .list-group-item,
+    .scaleteam-list-item,
+    .progress-info,
+    .filter-title,
+    .achievements-nav--filters .checkbox-inline label,
+    .achievements-nav .achievements-nav-item input.kind-filter+label p,
+    .expertises-user-list .expertises-user-list-header,
+    .expertises-user-list .expertises-user-list-item,
+    .expertise-list .expertise-list-item,
+    .icon-trophy,
+    .modal-content,
+    .current-article,
+    .main-title,
+    .page-header,
+    .video-item-views,
+    .control-label,
+    .boolean,
+    .very-big-icon,
+    h1.nav-title,
+    .project-name,
+    .project-desc-item,
+    #projects_registrations_stats,
+    .team-item .team-content .team-title,
+    .icon-file::before,
+    #project-show .project-summary-item,
+    .team-item .team-content .team-lock-and-close,
+    .shop-item .shop-item--body span.name,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .achievement-item .achievement-item--container .achievement-item--content h1,
+    .note-title,
+    .profile-title,
+    .main-navbar .main-navbar-user-nav>.dropdown>a>span,
+    .main-navbar .main-navbar-search::before {
+        color: #FFF;
+    }
+
+    .shop-item .shop-item--image,
+    .main-navbar {
+        background-color: #292d39;
+    }
+
+    .main-left-navbar,
+    .main-navbar .main-navbar-logo {
+        border-right: 2px solid #323F4B;
+    }
+
+    .profile-banner,
+    .user-column {
+        position: relative;
+    }
+
+    .profile-item .profile-image {
+        z-index: 1 !important;
+    }
+
+    .profile-banner::before,
+    .user-column::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(41, 45, 57, 0.70);
+    }
+
+    .btn.btn-default:hover,
+    [aria-labelledby="Application options"]>li>a:hover,
+    [aria-labelledby="Application options"] {
+        -webkit-text-fill-color: #FFF !important;
+    }
+
+    .btn-group>a {
+        -webkit-text-fill-color: #292d39 !important;
+    }
+
+    [aria-labelledby="Application options"]>li>a:hover,
+    [aria-labelledby="Application options"],
+    .container-item-nav-tab .nav-tabs>li.active>a,
+    .container-item-nav-tab .nav-tabs>li.active>a:hover,
+    .container-item-nav-tab .nav-tabs>li.active>a:focus,
+    .container-item-nav-tab .nav-tabs,
+    .container-item-nav-tab .tab-content,
+    .profile-title a.simple-link,
+    #project-show .project-desc-item,
+    .list-group-item,
+    .shop-item,
+    .container-item,
+    .container-fullsize .container-inner-item {
+        border-color: #323F4B;
+        background-color: #292d39;
+    }
+
+    .btn.btn-default:hover,
+    .btn-custom,
+    .btn.btn-primary,
+    .btn-primary.broadcasts-filters-btn {
+        color: #fff;
+        background: linear-gradient(to right, #2dd57a, #00babc);
+        border-color: transparent;
+    }
+
+    #project-show .project-status-box[data-status="success"],
+    #project-show .project-status-box[data-status="subscribed"] {
+        background: linear-gradient(to right, #2dd57a, #00babc);
+    }
+
+    #project-show .project-status-box[data-status="fail"] {
+        background: linear-gradient(to right, #FF512F, #DD2476);
+    }
+
+
+    .shop-wallet span.icon-piggy-bank {
+        color: #2dd57a;
+    }
+
+    .team-name,
+    .project-header,
+    .project-item .marked-title,
+    .notion-title a,
+    .container-item-nav-tab .nav-tabs>li.active>a,
+    .container-item-nav-tab .nav-tabs>li.active>a:hover,
+    .container-item-nav-tab .nav-tabs>li.active>a:focus,
+    .container-breadcrumb .breadcrumb .active>a,
+    .video-item-name,
+    .main-title,
+    .shop-nav-title,
+    .subscription-list a,
+    a>.articles-list-group-item-link,
+    .main-navbar .main-navbar-user-nav>.dropdown>a:hover>span,
+    a.project-item,
+    .profile-title a.simple-link {
+        background: -webkit-linear-gradient(#2dd57a, #00babc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    rect.highcharts-background {
+        fill: #292d39 !important;
+    }
+
+    .main-title .btn-group a.btn {
+        color: #292d39 !important;
+    }
+
+    .highcharts-axis-labels .highcharts-xaxis-labels>text {
+        color: #FFF !important;
+        fill: #FFF !important;
+    }
+
+    .app-sidebar-left .sidebar-tags-list .sidebar-tags-search .input-tags-filter,
+    .videos-search input {
+        background-color: #FFF;
+    }
+
+    .coalition-name a:hover {
+        text-decoration: none;
+    }
+
+    [data-toggle="tooltip"]>rect {
+        fill: #323F4B;
+    }
+
+
+    [data-cache="js"],
+    [text-anchor="start"],
+    [text-anchor="middle"],
+    [text-anchor="end"] {
+        color: #FFF !important;
+        fill: #FFF !important;
+    }
+
+    #coalition-scores .table-striped>tbody>tr:nth-of-type(2n),
+    #coalition-scores>table>thead>tr>th {
+        color: #FFF;
+    }
+
+    .achievements-nav--filters .checkbox-inline input[type="checkbox"]+label span,
+    .title-surline {
+        border-color: #FFF;
+        color: #FFF;
+    }
+
+    .correction-comment-item,
+    .table-list li.table-item:hover,
+    #event_search {
+        color: #292d39;
+    }
+}
