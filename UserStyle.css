@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20211206.18.06
+@version      20211206.19.46
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
@@ -8,10 +8,6 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://profile.intra.42.fr/"), url-prefix("https://projects.intra.42.fr/"), url-prefix("https://elearning.intra.42.fr/"), url-prefix("https://companies.intra.42.fr/en/users/jmartin"), url-prefix("https://meta.intra.42.fr/"), url-prefix("https://shop.intra.42.fr/"), url-prefix("https://companies.intra.42.fr") {
-[data-product-category="5"] {
-	display: none !important
-}
-
 .modal-content,
 body {
 	background-color: rgba(41, 45, 57, 0.96);
@@ -22,6 +18,10 @@ textarea.form-control,
 	background-color: rgba(41, 45, 57, 0.80);
 }
 
+.main-navbar .main-navbar-search .searches-title,
+.articles-content,
+.text-agu,
+.list,
 .quest-detail,
 .clusters-state,
 .changelogs-list .changelog-item .changelog-main,
@@ -145,9 +145,18 @@ h5,
 	background-color: #292d39;
 }
 
+.achievement-item.stack .achievement-item--container,
+.achievement-item .achievement-item--container,
 .team-item .team-repo .input-group input {
 	border-color: #323F4B;
-	border-radius: 3px;
+}
+
+.tt-menu,
+.achievement-item--content,
+.achievement-item--image,
+.tab-pane .achievement-item--container[data-done="true"], .container-inner-item.boxed .achievement-item--container {
+	border-color: #323F4B;
+	background-color: rgb(60,76,90) !important;
 }
 
 .achievement-progress-item .progress-container .progress {
@@ -216,6 +225,7 @@ rect.highcharts-background {
 	fill: #292d39 !important;
 }
 
+.subnotions-list > .subnotion-item h5,
 .main-title .btn-group a.btn {
 	color: #292d39 !important;
 }
@@ -312,7 +322,7 @@ rect.highcharts-background {
 }
 
 #coalition-scores .table-striped > tbody > tr:nth-of-type(2n+1) {
-	background: #323F4B;
+    background: #323F4B;
 }
 
 #coalition-scores .text-left,
@@ -351,7 +361,6 @@ rect.highcharts-background {
 }
 
 .expertise-list-item:hover,
-.stacked .achievement-item--content > h1,
 #event_search {
 	color: #292d39 !important;
 }
