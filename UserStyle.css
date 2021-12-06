@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20211206.17.31
+@version      20211206.18.06
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
@@ -244,6 +244,62 @@ rect.highcharts-background {
 [data-original-title="0h00"] > rect {
 	fill: #323F4B;
 	stroke: #323F4B;
+}
+
+[data-original-title*="1h"] > rect,
+[data-original-title*="2h"] > rect,
+[data-original-title*="3h"] > rect {
+	fill: #00f4f7;
+	stroke: #00f4f7;
+}
+
+[data-original-title*="4h"] > rect,
+[data-original-title*="5h"] > rect,
+[data-original-title*="6h"] > rect {
+	fill: #00e1e3;
+	stroke: #00e1e3;
+}
+
+[data-original-title*="7h"] > rect,
+[data-original-title*="8h"] > rect,
+[data-original-title*="9h"] > rect {
+	fill: #00cdd0;
+	stroke: #00cdd0;
+}
+
+[data-original-title*="10h"] > rect,
+[data-original-title*="11h"] > rect,
+[data-original-title*="12h"] > rect {
+	fill: #00babc;
+	stroke: #00babc;
+}
+
+[data-original-title*="13h"] > rect,
+[data-original-title*="14h"] > rect,
+[data-original-title*="15h"] > rect {
+	fill: #00a7a8;
+	stroke: #00a7a8;
+}
+
+[data-original-title*="16h"] > rect,
+[data-original-title*="17h"] > rect,
+[data-original-title*="18h"] > rect {
+	fill: #009395;
+	stroke: #009395;
+}
+
+[data-original-title*="19h"] > rect,
+[data-original-title*="20h"] > rect,
+[data-original-title*="21h"] > rect {
+	fill: #008081;
+	stroke: #008081;
+}
+
+[data-original-title*="22h"] > rect,
+[data-original-title*="23h"] > rect,
+[data-original-title*="24h"] > rect {
+	fill: #006c6e;
+	stroke: #006c6e;
 }
 
 
