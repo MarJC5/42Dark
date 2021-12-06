@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20211206.16.19
+@version      20211206.17.31
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
@@ -235,6 +235,13 @@ rect.highcharts-background {
 }
 
 [data-toggle="tooltip"] > rect {
+	fill: #00babc;
+	stroke: #00babc;
+	stroke-width: 1;
+}
+
+
+[data-original-title="0h00"] > rect {
 	fill: #323F4B;
 	stroke: #323F4B;
 }
@@ -249,7 +256,7 @@ rect.highcharts-background {
 }
 
 #coalition-scores .table-striped > tbody > tr:nth-of-type(2n+1) {
-    background: #323F4B;
+	background: #323F4B;
 }
 
 #coalition-scores .text-left,
