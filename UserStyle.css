@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20211206.20.59
+@version      20211206.21.15
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
@@ -116,6 +116,7 @@ h5,
 	background-color: rgba(41, 45, 57, 0.70);
 }
 
+.inline-search-form input,
 .btn-info,
 .project-item-lighteable,
 .btn.btn-default:hover,
@@ -157,6 +158,7 @@ h5,
 	background-color: #292d39;
 }
 
+
 .achievement-item.stack .achievement-item--container,
 .achievement-item .achievement-item--container,
 .team-item .team-repo .input-group input {
@@ -176,6 +178,13 @@ h5,
 	background-color: rgb(60, 76, 90) !important;
 }
 
+.search-item.search-user-item {
+	border-width: 3px;
+	border-color: #323F4B;
+}
+
+.inline-search-form input,
+.search-item.search-user-item .search-item-main,
 .achievement-progress-item .progress-container .progress {
 	background-color: #323F4B;
 }
