@@ -1,429 +1,485 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20211206.21.15
+@version      20211207.13.39
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
 @license      MIT License
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://profile.intra.42.fr/"), url-prefix("https://projects.intra.42.fr/"), url-prefix("https://elearning.intra.42.fr/"), url-prefix("https://companies.intra.42.fr/en/users/jmartin"), url-prefix("https://meta.intra.42.fr/"), url-prefix("https://shop.intra.42.fr/"), url-prefix("https://companies.intra.42.fr") {
-.modal-content,
-body {
-	background-color: rgba(41, 45, 57, 0.96);
-}
+@-moz-document url-prefix("https://profile.intra.42.fr/"), url-prefix("https://projects.intra.42.fr/"), url-prefix("https://elearning.intra.42.fr/"), url-prefix("https://companies.intra.42.fr/en/users/jmartin"), url-prefix("https://meta.intra.42.fr/"), url-prefix("https://shop.intra.42.fr/"), url-prefix("https://companies.intra.42.fr")
+{
+  /*
+* MAIN BACKGROUND 
+*/
 
-textarea.form-control,
-#smartModal {
-	background-color: rgba(41, 45, 57, 0.80);
-}
+  .modal-content,
+  body {
+    background-color: rgba(41, 45, 57, 0.96);
+  }
 
-.menu-drop-item.dancer.read .menu-drop-text,
-.form-control,
-.form-control[disabled],
-.form-control[readonly],
-fieldset[disabled] .form-control,
-.projects-list-container .projects-list--header .projects-list--search,
-.main-navbar .main-navbar-user-nav .dropdown-menu > li > a,
-.application-item--detail .application-details,
-.main-navbar .main-navbar-search .searches-title,
-.articles-content,
-.text-agu,
-.list,
-.quest-detail,
-.clusters-state,
-.changelogs-list .changelog-item .changelog-main,
-.team-item .team-repo .input-group input,
-[aria-labelledby="Application options"],
-.main-navbar-search,
-textarea.form-control,
-.container-fluid.main table.table > tbody > tr > th,
-.description-offer,
-.container-inner-item,
-.languages-lists,
-.list-group-item,
-.scaleteam-list-item,
-.progress-info,
-.filter-title,
-.achievements-nav--filters .checkbox-inline label,
-.achievements-nav .achievements-nav-item input.kind-filter + label p,
-.expertises-user-list .expertises-user-list-header,
-.expertises-user-list .expertises-user-list-item,
-.expertise-list .expertise-list-item,
-.icon-trophy,
-.modal-content,
-.current-article,
-.main-title,
-.page-header,
-.video-item-views,
-.control-label,
-.boolean,
-.very-big-icon,
-h1.nav-title,
-.project-name,
-.project-desc-item,
-#projects_registrations_stats,
-.team-item .team-content .team-title,
-.icon-file::before,
-#project-show .project-summary-item,
-.team-item .team-content .team-lock-and-close,
-.shop-item .shop-item--body span.name,
-h1,
-h2,
-h3,
-h4,
-h5,
-.achievement-item .achievement-item--container .achievement-item--content h1,
-.note-title,
-.profile-title,
-.main-navbar .main-navbar-user-nav > .dropdown > a > span,
-.main-navbar .main-navbar-search::before {
-	color: #FFF;
-}
+  textarea.form-control,
+  #smartModal {
+    background-color: rgba(41, 45, 57, 0.8);
+  }
 
-.shop-item .shop-item--image,
-.main-navbar {
-	background-color: #292d39;
-}
+  /*
+* WHITE TEXT 
+*/
 
-.main-left-navbar,
-.main-navbar .main-navbar-logo {
-	border-right: 2px solid #323F4B;
-}
+  .show-offer .show-right,
+  .broad-content .content-style,
+  .menu-drop-item.dancer.read .menu-drop-text,
+  .form-control,
+  .form-control[disabled],
+  .form-control[readonly],
+  fieldset[disabled] .form-control,
+  .projects-list-container .projects-list--header .projects-list--search,
+  .main-navbar .main-navbar-user-nav .dropdown-menu > li > a,
+  .application-item--detail .application-details,
+  .main-navbar .main-navbar-search .searches-title,
+  .articles-content,
+  .text-agu,
+  .list,
+  .quest-detail,
+  .clusters-state,
+  .changelogs-list .changelog-item .changelog-main,
+  .team-item .team-repo .input-group input,
+  [aria-labelledby="Application options"],
+  .main-navbar-search,
+  textarea.form-control,
+  .container-fluid.main table.table > tbody > tr > th,
+  .description-offer,
+  .container-inner-item,
+  .languages-lists,
+  .list-group-item,
+  .scaleteam-list-item,
+  .progress-info,
+  .filter-title,
+  .achievements-nav--filters .checkbox-inline label,
+  .achievements-nav .achievements-nav-item input.kind-filter + label p,
+  .expertises-user-list .expertises-user-list-header,
+  .expertises-user-list .expertises-user-list-item,
+  .expertise-list .expertise-list-item,
+  .icon-trophy,
+  .modal-content,
+  .current-article,
+  .main-title,
+  .page-header,
+  .video-item-views,
+  .control-label,
+  .boolean,
+  .very-big-icon,
+  h1.nav-title,
+  .project-name,
+  .project-desc-item,
+  #projects_registrations_stats,
+  .team-item .team-content .team-title,
+  .icon-file::before,
+  #project-show .project-summary-item,
+  .team-item .team-content .team-lock-and-close,
+  .shop-item .shop-item--body span.name,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .achievement-item .achievement-item--container .achievement-item--content h1,
+  .note-title,
+  .profile-title,
+  .main-navbar .main-navbar-user-nav > .dropdown > a > span,
+  .main-navbar .main-navbar-search::before {
+    color: #fff;
+  }
 
-.user-banner {
-	margin: 0 38px !important;
-}
+  /*
+* TEXT COLOR & DECORATION
+*/
 
-.user-banner,
-.profile-banner,
-.user-column {
-	position: relative;
-}
+  .inline-search-form input,
+  .btn-info,
+  .project-item-lighteable,
+  .btn.btn-default:hover,
+  [aria-labelledby="Application options"] > li > a:hover,
+  [aria-labelledby="Application options"] {
+    -webkit-text-fill-color: #fff !important;
+  }
 
-#coalition-rank,
-#coalition-score,
-.profile-item .profile-image {
-	z-index: 1 !important;
-}
+  .text-success {
+    -webkit-text-fill-color: #5cb85c !important;
+  }
 
-.profile-banner::before,
-.user-column::before {
-	content: "";
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(41, 45, 57, 0.70);
-}
+  .text-danger {
+    -webkit-text-fill-color: #d8636f !important;
+  }
 
-.inline-search-form input,
-.btn-info,
-.project-item-lighteable,
-.btn.btn-default:hover,
-[aria-labelledby="Application options"] > li > a:hover,
-[aria-labelledby="Application options"] {
-	-webkit-text-fill-color: #FFF !important;
-}
+  #read-notification-form,
+  .btn-group > a {
+    -webkit-text-fill-color: #292d39 !important;
+  }
 
-.text-success {
-	-webkit-text-fill-color: #5cb85c !important;
-}
+  .shop-wallet span.icon-piggy-bank {
+    color: #2dd57a;
+  }
 
-.text-danger {
-	-webkit-text-fill-color: #D8636F !important;
-}
+  .content-style > .text-muted {
+    color: #00babc !important;
+  }
 
-#read-notification-form,
-.btn-group > a {
-	-webkit-text-fill-color: #292d39 !important;
-}
+  .team-name,
+  .project-header,
+  .project-item .marked-title,
+  .notion-title a,
+  .container-item-nav-tab .nav-tabs > li.active > a,
+  .container-item-nav-tab .nav-tabs > li.active > a:hover,
+  .container-item-nav-tab .nav-tabs > li.active > a:focus,
+  .container-breadcrumb .breadcrumb .active > a,
+  .video-item-name,
+  .main-title,
+  .shop-nav-title,
+  .subscription-list a,
+  a > .articles-list-group-item-link,
+  .main-navbar .main-navbar-user-nav > .dropdown > a:hover > span,
+  a.project-item,
+  .profile-title a.simple-link {
+    background: -webkit-linear-gradient(#2dd57a, #00babc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.notifications-container,
-.tt-menu,
-.application-item--detail .application-details,
-[aria-labelledby="Application options"] > li > a:hover,
-[aria-labelledby="Application options"],
-.container-item-nav-tab .nav-tabs > li.active > a,
-.container-item-nav-tab .nav-tabs > li.active > a:hover,
-.container-item-nav-tab .nav-tabs > li.active > a:focus,
-.container-item-nav-tab .nav-tabs,
-.container-item-nav-tab .tab-content,
-.profile-title a.simple-link,
-#project-show .project-desc-item,
-.list-group-item,
-.shop-item,
-.container-item,
-.container-fullsize .container-inner-item {
-	border-color: #323F4B;
-	background-color: #292d39;
-}
+  rect.highcharts-background {
+    fill: #292d39 !important;
+  }
 
+  .main-title .btn-group a.btn {
+    color: #292d39 !important;
+  }
 
-.achievement-item.stack .achievement-item--container,
-.achievement-item .achievement-item--container,
-.team-item .team-repo .input-group input {
-	border-color: #323F4B;
-}
+  .highcharts-axis-labels .highcharts-xaxis-labels > text {
+    color: #fff !important;
+    fill: #fff !important;
+  }
 
-.notification-item:hover,
-.vertical-list-item.notification-item.unread:hover,
-.menu-drop-item.dancer.read,
-.main-navbar .main-navbar-user-nav .dropdown-menu,
-.current.log-item,
-.achievement-item--content,
-.achievement-item--image,
-.tab-pane .achievement-item--container[data-done="true"],
-.container-inner-item.boxed .achievement-item--container {
-	border-color: #323F4B;
-	background-color: rgb(60, 76, 90) !important;
-}
+  .map-container text {
+    fill: #00babc !important;
+  }
 
-.search-item.search-user-item {
-	border-width: 3px;
-	border-color: #323F4B;
-}
+  .main-navbar .main-navbar-user-nav .dropdown-menu,
+  .table-list li.table-item:hover {
+    color: #fff !important;
+    fill: #fff !important;
+  }
 
-.inline-search-form input,
-.search-item.search-user-item .search-item-main,
-.achievement-progress-item .progress-container .progress {
-	background-color: #323F4B;
-}
+  #coalition-scores .text-left,
+  #coalition-scores .table-striped > tbody > tr:nth-of-type(2n),
+  #coalition-scores > table > thead > tr > th {
+    color: #fff;
+  }
 
-#project-show .project-summary-item .btn {
-	border-radius: 3px;
-	background: #00babc;
-}
+  /*
+* USER PROFILE & COAL
+*/
 
-.btn.btn-danger {
-	border-radius: 3px;
-	background: #d8636f !important;
-}
+  .user-banner {
+    margin: 0 38px !important;
+  }
 
-.btn-default,
-.btn-warning,
-.btn-success,
-.btn-info {
-	border-radius: 3px;
-}
+  .user-banner,
+  .profile-banner,
+  .user-column {
+    position: relative;
+  }
 
-.btn.btn-default:hover,
-.btn-custom,
-.btn.btn-primary,
-.btn-primary.broadcasts-filters-btn {
-	border-radius: 3px;
-	background-color: #292d39;
-}
+  #coalition-rank,
+  #coalition-score,
+  .profile-item .profile-image {
+    z-index: 1 !important;
+  }
 
-#project-show .project-status-box[data-status="success"],
-#project-show .project-status-box[data-status="subscribed"] {
-	background: linear-gradient(to right, #2dd57a, #00babc);
-}
+  .coalition-name a:hover {
+    text-decoration: none;
+  }
 
-#project-show .project-status-box[data-status="fail"] {
-	background: linear-gradient(to right, #FF512F, #DD2476);
-}
+  .profile-banner::before,
+  .user-column::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(41, 45, 57, 0.7);
+  }
 
+  /*
+* BACKGROUND-COLOR/BORDER => CARD, SECTION ETC...
+*/
 
-.shop-wallet span.icon-piggy-bank {
-	color: #2dd57a;
-}
+  .shop-item .shop-item--image,
+  .main-navbar {
+    background-color: #292d39;
+  }
 
-.team-name,
-.project-header,
-.project-item .marked-title,
-.notion-title a,
-.container-item-nav-tab .nav-tabs > li.active > a,
-.container-item-nav-tab .nav-tabs > li.active > a:hover,
-.container-item-nav-tab .nav-tabs > li.active > a:focus,
-.container-breadcrumb .breadcrumb .active > a,
-.video-item-name,
-.main-title,
-.shop-nav-title,
-.subscription-list a,
-a > .articles-list-group-item-link,
-.main-navbar .main-navbar-user-nav > .dropdown > a:hover > span,
-a.project-item,
-.profile-title a.simple-link {
-	background: -webkit-linear-gradient(#2dd57a, #00babc);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
+  .main-left-navbar,
+  .main-navbar .main-navbar-logo {
+    border-right: 2px solid #323f4b;
+  }
 
-rect.highcharts-background {
-	fill: #292d39 !important;
-}
+  .broadcasts-filters-dropdown-menu,
+  .broad-content,
+  .notifications-container,
+  .tt-menu,
+  .application-item--detail .application-details,
+  [aria-labelledby="Application options"] > li > a:hover,
+  [aria-labelledby="Application options"],
+  .container-item-nav-tab .nav-tabs > li.active > a,
+  .container-item-nav-tab .nav-tabs > li.active > a:hover,
+  .container-item-nav-tab .nav-tabs > li.active > a:focus,
+  .container-item-nav-tab .nav-tabs,
+  .container-item-nav-tab .tab-content,
+  .profile-title a.simple-link,
+  #project-show .project-desc-item,
+  .list-group-item,
+  .shop-item,
+  .container-item,
+  .container-fullsize .container-inner-item {
+    border-color: #323f4b;
+    background-color: #292d39;
+  }
 
-.main-title .btn-group a.btn {
-	color: #292d39 !important;
-}
+  .achievement-item.stack .achievement-item--container,
+  .achievement-item .achievement-item--container,
+  .team-item .team-repo .input-group input {
+    border-color: #323f4b;
+  }
 
-.highcharts-axis-labels .highcharts-xaxis-labels > text {
-	color: #FFF !important;
-	fill: #FFF !important;
-}
+  .container-breadcrumb .breadcrumb,
+  .app-sidebar-right,
+  #coalition-scores .table-striped > tbody > tr:nth-of-type(2n + 1) {
+    background: #323f4b;
+  }
 
-.app-sidebar-left .sidebar-tags-list .sidebar-tags-search .input-tags-filter,
-.videos-search input {
-	background-color: #FFF;
-}
+  #broadcasts-container,
+  .notification-item:hover,
+  .vertical-list-item.notification-item.unread:hover,
+  .menu-drop-item.dancer.read,
+  .main-navbar .main-navbar-user-nav .dropdown-menu,
+  .current.log-item,
+  .achievement-item--content,
+  .achievement-item--image,
+  .tab-pane .achievement-item--container[data-done="true"],
+  .container-inner-item.boxed .achievement-item--container {
+    border-color: #323f4b;
+    background-color: rgb(60, 76, 90) !important;
+  }
 
-.coalition-name a:hover {
-	text-decoration: none;
-}
+  .search-item.search-user-item {
+    border-width: 3px;
+    border-color: #323f4b;
+  }
 
-[data-toggle="tooltip"] > rect {
-	fill: #00babc;
-	stroke: #00babc;
-	stroke-width: 1;
-}
+  .inline-search-form input,
+  .search-item.search-user-item .search-item-main,
+  .achievement-progress-item .progress-container .progress {
+    background-color: #323f4b;
+  }
 
+  #project-show .project-summary-item .btn {
+    border-radius: 3px;
+    background: #00babc;
+  }
 
-[data-original-title="0h00"] > rect {
-	fill: #323F4B;
-	stroke: #323F4B;
-}
+  .btn.btn-danger {
+    border-radius: 3px;
+    background: #d8636f !important;
+  }
 
-[data-original-title*="1h"] > rect,
-[data-original-title*="2h"] > rect,
-[data-original-title*="3h"] > rect {
-	fill: #00f4f7;
-	stroke: #00f4f7;
-}
+  .btn-info.btn-companies,
+  .btn-default,
+  .btn-warning,
+  .btn-success,
+  .btn-info {
+    border-radius: 3px;
+  }
 
-[data-original-title*="4h"] > rect,
-[data-original-title*="5h"] > rect,
-[data-original-title*="6h"] > rect {
-	fill: #00e1e3;
-	stroke: #00e1e3;
-}
+  .broad-content {
+    margin-left: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #292d39;
+  }
 
-[data-original-title*="7h"] > rect,
-[data-original-title*="8h"] > rect,
-[data-original-title*="9h"] > rect {
-	fill: #00cdd0;
-	stroke: #00cdd0;
-}
+  .articles-routes {
+    background-color: #323f4b;
+    border-radius: 3px;
+  }
 
-[data-original-title*="10h"] > rect,
-[data-original-title*="11h"] > rect,
-[data-original-title*="12h"] > rect {
-	fill: #00babc;
-	stroke: #00babc;
-}
+  #sidebarCollapse {
+    margin-top: -2px !important;
+  }
 
-[data-original-title*="13h"] > rect,
-[data-original-title*="14h"] > rect,
-[data-original-title*="15h"] > rect {
-	fill: #00a7a8;
-	stroke: #00a7a8;
-}
+  .btn.btn-default:hover,
+  .btn-custom,
+  .btn.btn-primary,
+  .btn-primary.broadcasts-filters-btn {
+    border-radius: 3px;
+    background-color: #292d39;
+  }
 
-[data-original-title*="16h"] > rect,
-[data-original-title*="17h"] > rect,
-[data-original-title*="18h"] > rect {
-	fill: #009395;
-	stroke: #009395;
-}
+  #project-show .project-status-box[data-status="success"],
+  #project-show .project-status-box[data-status="subscribed"] {
+    background: linear-gradient(to right, #2dd57a, #00babc);
+  }
 
-[data-original-title*="19h"] > rect,
-[data-original-title*="20h"] > rect,
-[data-original-title*="21h"] > rect {
-	fill: #008081;
-	stroke: #008081;
-}
+  #project-show .project-status-box[data-status="fail"] {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+  }
 
-[data-original-title*="22h"] > rect,
-[data-original-title*="23h"] > rect,
-[data-original-title*="24h"] > rect {
-	fill: #006c6e;
-	stroke: #006c6e;
-}
+  .app-sidebar-left .sidebar-tags-list .sidebar-tags-search .input-tags-filter,
+  .videos-search input {
+    background-color: #fff;
+  }
 
+  .notion-grid > .notion-item,
+  .notion-grid > .subnotion-item,
+  .subnotion-grid > .notion-item,
+  .subnotion-grid > .subnotion-item,
+  [placeholder="Reason or user"] {
+    border-color: #323f4b;
+    border-radius: 3px;
+    background-color: #323f4b;
+    color: #fff;
+  }
 
-[data-cache="js"],
-[text-anchor="start"],
-[text-anchor="middle"],
-[text-anchor="end"] {
-	color: #FFF !important;
-	fill: #FFF !important;
-}
+  .achievements-nav--filters
+    .checkbox-inline
+    input[type="checkbox"]
+    + label
+    span,
+  .title-surline {
+    border-color: #fff;
+    color: #fff;
+  }
 
-.container-breadcrumb .breadcrumb,
-.app-sidebar-right,
-#coalition-scores .table-striped > tbody > tr:nth-of-type(2n+1) {
-	background: #323F4B;
-}
+  .projects-list-container .projects-list--list-header .project-item:hover,
+  .projects-list-container .projects-list--list .project-item:hover,
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus,
+  .table-list li.table-item:hover,
+  .changelogs-list .changelog-item .changelog-main:hover,
+  .team-item .team-repo .input-group input,
+  .correction-item .corrected-item .correction-comment-item {
+    background-color: #323f4b;
+  }
 
-#coalition-scores .text-left,
-#coalition-scores .table-striped > tbody > tr:nth-of-type(2n),
-#coalition-scores > table > thead > tr > th {
-	color: #FFF;
-}
+  .achievements-nav--filters
+    .checkbox-inline
+    input[type="checkbox"]:checked
+    + label
+    span {
+    background-color: #fff !important;
+  }
 
-.notion-grid > .notion-item,
-.notion-grid > .subnotion-item,
-.subnotion-grid > .notion-item,
-.subnotion-grid > .subnotion-item,
-[placeholder="Reason or user"] {
-	border-color: #323F4B;
-	border-radius: 3px;
-	background-color: #323F4B;
-	color: #FFF;
-}
+  .bootstrap-datetimepicker-widget,
+  .expertise-list-item:hover,
+  #event_search {
+    background-color: #323f4b !important;
+  }
 
-.achievements-nav--filters .checkbox-inline input[type="checkbox"] + label span,
-.title-surline {
-	border-color: #FFF;
-	color: #FFF;
-}
+  .broadcast-footer,
+  .Select--single > .Select-control .Select-value,
+  .Select-placeholder,
+  .form-control,
+  .form-control[disabled],
+  .form-control[readonly],
+  fieldset[disabled] .form-control,
+  .nav-pills.nav-stacked > li a:hover,
+  .projects-list-container .projects-list--header .projects-list--search,
+  .chosen-container-multi .chosen-choices {
+    background-color: #323f4b;
+    border-color: #292d39;
+    border-radius: 3px;
+  }
 
-.projects-list-container .projects-list--list-header .project-item:hover,
-.projects-list-container .projects-list--list .project-item:hover,
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
-.table-list li.table-item:hover,
-.changelogs-list .changelog-item .changelog-main:hover,
-.team-item .team-repo .input-group input,
-.correction-item .corrected-item .correction-comment-item {
-	background-color: #323F4B;
-}
+  .Select--single > .Select-control .Select-value,
+  .Select-placeholder {
+    border-radius: 0;
+  }
 
-.map-container text {
-	fill: #00babc !important;
-}
+  /*
+* LOGTIME 
+*/
 
-.main-navbar .main-navbar-user-nav .dropdown-menu,
-.table-list li.table-item:hover {
-	color: #FFF !important;
-	fill: #FFF !important;
-}
+  [data-toggle="tooltip"] > rect {
+    fill: #00babc;
+    stroke: #00babc;
+    stroke-width: 1;
+  }
 
-.achievements-nav--filters .checkbox-inline input[type="checkbox"]:checked + label span {
-	background-color: #FFF !important;
-}
+  [data-original-title="0h00"] > rect {
+    fill: #323f4b;
+    stroke: #323f4b;
+  }
 
-.bootstrap-datetimepicker-widget,
-.expertise-list-item:hover,
-#event_search {
-	background-color: #323F4B !important;
-}
+  [data-original-title*="1h"] > rect,
+  [data-original-title*="2h"] > rect,
+  [data-original-title*="3h"] > rect {
+    fill: #00f4f7;
+    stroke: #00f4f7;
+  }
 
-.Select--single > .Select-control .Select-value,
-.Select-placeholder,
-.form-control,
-.form-control[disabled],
-.form-control[readonly],
-fieldset[disabled] .form-control,
-.nav-pills.nav-stacked > li a:hover,
-.projects-list-container .projects-list--header .projects-list--search,
-.chosen-container-multi .chosen-choices {
-	background-color: #323F4B;
-	border-color: #292d39;
-	border-radius: 3px;
-}
+  [data-original-title*="4h"] > rect,
+  [data-original-title*="5h"] > rect,
+  [data-original-title*="6h"] > rect {
+    fill: #00e1e3;
+    stroke: #00e1e3;
+  }
 
-.Select--single > .Select-control .Select-value,
-.Select-placeholder {
-	border-radius: 0;
-}
+  [data-original-title*="7h"] > rect,
+  [data-original-title*="8h"] > rect,
+  [data-original-title*="9h"] > rect {
+    fill: #00cdd0;
+    stroke: #00cdd0;
+  }
+
+  [data-original-title*="10h"] > rect,
+  [data-original-title*="11h"] > rect,
+  [data-original-title*="12h"] > rect {
+    fill: #00babc;
+    stroke: #00babc;
+  }
+
+  [data-original-title*="13h"] > rect,
+  [data-original-title*="14h"] > rect,
+  [data-original-title*="15h"] > rect {
+    fill: #00a7a8;
+    stroke: #00a7a8;
+  }
+
+  [data-original-title*="16h"] > rect,
+  [data-original-title*="17h"] > rect,
+  [data-original-title*="18h"] > rect {
+    fill: #009395;
+    stroke: #009395;
+  }
+
+  [data-original-title*="19h"] > rect,
+  [data-original-title*="20h"] > rect,
+  [data-original-title*="21h"] > rect {
+    fill: #008081;
+    stroke: #008081;
+  }
+
+  [data-original-title*="22h"] > rect,
+  [data-original-title*="23h"] > rect,
+  [data-original-title*="24h"] > rect {
+    fill: #006c6e;
+    stroke: #006c6e;
+  }
+
+  [data-cache="js"],
+  [text-anchor="start"],
+  [text-anchor="middle"],
+  [text-anchor="end"] {
+    color: #fff !important;
+    fill: #fff !important;
+  }
 }
