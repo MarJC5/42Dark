@@ -88,7 +88,8 @@
   .note-title,
   .profile-title,
   .main-navbar .main-navbar-user-nav > .dropdown > a > span,
-  .main-navbar .main-navbar-search::before {
+  .main-navbar .main-navbar-search::before,
+  #project-show .project-notifications .project-item.reminder {
     color: #fff;
   }
 
@@ -145,6 +146,10 @@
     background: -webkit-linear-gradient(#2dd57a, #00babc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .project-notifications:not(:empty):before {
+    color: #04babb !important;
   }
 
   rect.highcharts-background {
