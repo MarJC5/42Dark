@@ -7,8 +7,13 @@
 @license      MIT License
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://profile.intra.42.fr/"), url-prefix("https://projects.intra.42.fr/"), url-prefix("https://elearning.intra.42.fr/"), url-prefix("https://companies.intra.42.fr/en/users/jmartin"), url-prefix("https://meta.intra.42.fr/"), url-prefix("https://shop.intra.42.fr/"), url-prefix("https://companies.intra.42.fr")
-{
+@-moz-document url-prefix("https://profile.intra.42.fr/"),
+url-prefix("https://projects.intra.42.fr/"),
+url-prefix("https://elearning.intra.42.fr/"),
+url-prefix("https://companies.intra.42.fr/en/users/jmartin"),
+url-prefix("https://meta.intra.42.fr/"),
+url-prefix("https://shop.intra.42.fr/"),
+url-prefix("https://companies.intra.42.fr") {
   /*
 * MAIN BACKGROUND 
 */
@@ -27,6 +32,8 @@
 * WHITE TEXT 
 */
 
+  [aria-labelledby="Project options"]>li>a:hover,
+  [aria-labelledby="Project options"]>li>a,
   .show-offer .show-right,
   .broad-content .content-style,
   .menu-drop-item.dancer.read .menu-drop-text,
@@ -35,7 +42,7 @@
   .form-control[readonly],
   fieldset[disabled] .form-control,
   .projects-list-container .projects-list--header .projects-list--search,
-  .main-navbar .main-navbar-user-nav .dropdown-menu > li > a,
+  .main-navbar .main-navbar-user-nav .dropdown-menu>li>a,
   .application-item--detail .application-details,
   .main-navbar .main-navbar-search .searches-title,
   .articles-content,
@@ -48,7 +55,7 @@
   [aria-labelledby="Application options"],
   .main-navbar-search,
   textarea.form-control,
-  .container-fluid.main table.table > tbody > tr > th,
+  .container-fluid.main table.table>tbody>tr>th,
   .description-offer,
   .container-inner-item,
   .languages-lists,
@@ -57,7 +64,7 @@
   .progress-info,
   .filter-title,
   .achievements-nav--filters .checkbox-inline label,
-  .achievements-nav .achievements-nav-item input.kind-filter + label p,
+  .achievements-nav .achievements-nav-item input.kind-filter+label p,
   .expertises-user-list .expertises-user-list-header,
   .expertises-user-list .expertises-user-list-item,
   .expertise-list .expertise-list-item,
@@ -87,7 +94,7 @@
   .achievement-item .achievement-item--container .achievement-item--content h1,
   .note-title,
   .profile-title,
-  .main-navbar .main-navbar-user-nav > .dropdown > a > span,
+  .main-navbar .main-navbar-user-nav>.dropdown>a>span,
   .main-navbar .main-navbar-search::before,
   #project-show .project-notifications .project-item.reminder {
     color: #fff;
@@ -101,7 +108,7 @@
   .btn-info,
   .project-item-lighteable,
   .btn.btn-default:hover,
-  [aria-labelledby="Application options"] > li > a:hover,
+  [aria-labelledby="Application options"]>li>a:hover,
   [aria-labelledby="Application options"] {
     -webkit-text-fill-color: #fff !important;
   }
@@ -114,8 +121,8 @@
     -webkit-text-fill-color: #d8636f !important;
   }
 
-  #read-notification-form,
-  .btn-group > a {
+  .notification-btn.btn.btn-default,
+  .btn-group>a {
     -webkit-text-fill-color: #292d39 !important;
   }
 
@@ -123,24 +130,27 @@
     color: #2dd57a;
   }
 
-  .content-style > .text-muted {
+  .content-style>.text-muted {
     color: #00babc !important;
   }
 
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:hover,
+  .nav-tabs>li.active>a:focus,
   .team-name,
   .project-header,
   .project-item .marked-title,
   .notion-title a,
-  .container-item-nav-tab .nav-tabs > li.active > a,
-  .container-item-nav-tab .nav-tabs > li.active > a:hover,
-  .container-item-nav-tab .nav-tabs > li.active > a:focus,
-  .container-breadcrumb .breadcrumb .active > a,
+  .container-item-nav-tab .nav-tabs>li.active>a,
+  .container-item-nav-tab .nav-tabs>li.active>a:hover,
+  .container-item-nav-tab .nav-tabs>li.active>a:focus,
+  .container-breadcrumb .breadcrumb .active>a,
   .video-item-name,
   .main-title,
   .shop-nav-title,
   .subscription-list a,
-  a > .articles-list-group-item-link,
-  .main-navbar .main-navbar-user-nav > .dropdown > a:hover > span,
+  a>.articles-list-group-item-link,
+  .main-navbar .main-navbar-user-nav>.dropdown>a:hover>span,
   a.project-item,
   .profile-title a.simple-link {
     background: -webkit-linear-gradient(#2dd57a, #00babc);
@@ -160,7 +170,7 @@
     color: #292d39 !important;
   }
 
-  .highcharts-axis-labels .highcharts-xaxis-labels > text {
+  .highcharts-axis-labels .highcharts-xaxis-labels>text {
     color: #fff !important;
     fill: #fff !important;
   }
@@ -176,9 +186,27 @@
   }
 
   #coalition-scores .text-left,
-  #coalition-scores .table-striped > tbody > tr:nth-of-type(2n),
-  #coalition-scores > table > thead > tr > th {
+  #coalition-scores .table-striped>tbody>tr:nth-of-type(2n),
+  #coalition-scores>table>thead>tr>th {
     color: #fff;
+  }
+
+  [aria-labelledby="Project options"] {
+    padding: 0;
+    border-radius: 3px;
+  }
+
+  [aria-labelledby="Project options"]>li>a {
+    padding: 8px 20px;
+  }
+
+  .form-group.text.optional.notepad_content {
+    margin: 0;
+  }
+
+  .notepad-toolbar {
+    border-color: #323F4B;
+    margin: 20px 0;
   }
 
   /*
@@ -228,16 +256,18 @@
     border-right: 2px solid #323f4b;
   }
 
+  [aria-labelledby="Project options"],
+  .feedback-comment-item,
   .broadcasts-filters-dropdown-menu,
   .broad-content,
   .notifications-container,
   .tt-menu,
   .application-item--detail .application-details,
-  [aria-labelledby="Application options"] > li > a:hover,
+  [aria-labelledby="Application options"]>li>a:hover,
   [aria-labelledby="Application options"],
-  .container-item-nav-tab .nav-tabs > li.active > a,
-  .container-item-nav-tab .nav-tabs > li.active > a:hover,
-  .container-item-nav-tab .nav-tabs > li.active > a:focus,
+  .container-item-nav-tab .nav-tabs>li.active>a,
+  .container-item-nav-tab .nav-tabs>li.active>a:hover,
+  .container-item-nav-tab .nav-tabs>li.active>a:focus,
   .container-item-nav-tab .nav-tabs,
   .container-item-nav-tab .tab-content,
   .profile-title a.simple-link,
@@ -258,7 +288,7 @@
 
   .container-breadcrumb .breadcrumb,
   .app-sidebar-right,
-  #coalition-scores .table-striped > tbody > tr:nth-of-type(2n + 1) {
+  #coalition-scores .table-striped>tbody>tr:nth-of-type(2n + 1) {
     background: #323f4b;
   }
 
@@ -343,10 +373,10 @@
     background-color: #fff;
   }
 
-  .notion-grid > .notion-item,
-  .notion-grid > .subnotion-item,
-  .subnotion-grid > .notion-item,
-  .subnotion-grid > .subnotion-item,
+  .notion-grid>.notion-item,
+  .notion-grid>.subnotion-item,
+  .subnotion-grid>.notion-item,
+  .subnotion-grid>.subnotion-item,
   [placeholder="Reason or user"] {
     border-color: #323f4b;
     border-radius: 3px;
@@ -354,11 +384,7 @@
     color: #fff;
   }
 
-  .achievements-nav--filters
-    .checkbox-inline
-    input[type="checkbox"]
-    + label
-    span,
+  .achievements-nav--filters .checkbox-inline input[type="checkbox"]+label span,
   .title-surline {
     border-color: #fff;
     color: #fff;
@@ -366,8 +392,8 @@
 
   .projects-list-container .projects-list--list-header .project-item:hover,
   .projects-list-container .projects-list--list .project-item:hover,
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus,
+  .dropdown-menu>li>a:hover,
+  .dropdown-menu>li>a:focus,
   .table-list li.table-item:hover,
   .changelogs-list .changelog-item .changelog-main:hover,
   .team-item .team-repo .input-group input,
@@ -375,11 +401,7 @@
     background-color: #323f4b;
   }
 
-  .achievements-nav--filters
-    .checkbox-inline
-    input[type="checkbox"]:checked
-    + label
-    span {
+  .achievements-nav--filters .checkbox-inline input[type="checkbox"]:checked+label span {
     background-color: #fff !important;
   }
 
@@ -390,13 +412,13 @@
   }
 
   .broadcast-footer,
-  .Select--single > .Select-control .Select-value,
+  .Select--single>.Select-control .Select-value,
   .Select-placeholder,
   .form-control,
   .form-control[disabled],
   .form-control[readonly],
   fieldset[disabled] .form-control,
-  .nav-pills.nav-stacked > li a:hover,
+  .nav-pills.nav-stacked>li a:hover,
   .projects-list-container .projects-list--header .projects-list--search,
   .chosen-container-multi .chosen-choices {
     background-color: #323f4b;
@@ -404,7 +426,7 @@
     border-radius: 3px;
   }
 
-  .Select--single > .Select-control .Select-value,
+  .Select--single>.Select-control .Select-value,
   .Select-placeholder {
     border-radius: 0;
   }
@@ -413,69 +435,69 @@
 * LOGTIME 
 */
 
-  [data-toggle="tooltip"] > rect {
+  [data-toggle="tooltip"]>rect {
     fill: #00babc;
     stroke: #00babc;
     stroke-width: 1;
   }
 
-  [data-original-title="0h00"] > rect {
+  [data-original-title="0h00"]>rect {
     fill: #323f4b;
     stroke: #323f4b;
   }
 
-  [data-original-title*="1h"] > rect,
-  [data-original-title*="2h"] > rect,
-  [data-original-title*="3h"] > rect {
+  [data-original-title*="1h"]>rect,
+  [data-original-title*="2h"]>rect,
+  [data-original-title*="3h"]>rect {
     fill: #00f4f7;
     stroke: #00f4f7;
   }
 
-  [data-original-title*="4h"] > rect,
-  [data-original-title*="5h"] > rect,
-  [data-original-title*="6h"] > rect {
+  [data-original-title*="4h"]>rect,
+  [data-original-title*="5h"]>rect,
+  [data-original-title*="6h"]>rect {
     fill: #00e1e3;
     stroke: #00e1e3;
   }
 
-  [data-original-title*="7h"] > rect,
-  [data-original-title*="8h"] > rect,
-  [data-original-title*="9h"] > rect {
+  [data-original-title*="7h"]>rect,
+  [data-original-title*="8h"]>rect,
+  [data-original-title*="9h"]>rect {
     fill: #00cdd0;
     stroke: #00cdd0;
   }
 
-  [data-original-title*="10h"] > rect,
-  [data-original-title*="11h"] > rect,
-  [data-original-title*="12h"] > rect {
+  [data-original-title*="10h"]>rect,
+  [data-original-title*="11h"]>rect,
+  [data-original-title*="12h"]>rect {
     fill: #00babc;
     stroke: #00babc;
   }
 
-  [data-original-title*="13h"] > rect,
-  [data-original-title*="14h"] > rect,
-  [data-original-title*="15h"] > rect {
+  [data-original-title*="13h"]>rect,
+  [data-original-title*="14h"]>rect,
+  [data-original-title*="15h"]>rect {
     fill: #00a7a8;
     stroke: #00a7a8;
   }
 
-  [data-original-title*="16h"] > rect,
-  [data-original-title*="17h"] > rect,
-  [data-original-title*="18h"] > rect {
+  [data-original-title*="16h"]>rect,
+  [data-original-title*="17h"]>rect,
+  [data-original-title*="18h"]>rect {
     fill: #009395;
     stroke: #009395;
   }
 
-  [data-original-title*="19h"] > rect,
-  [data-original-title*="20h"] > rect,
-  [data-original-title*="21h"] > rect {
+  [data-original-title*="19h"]>rect,
+  [data-original-title*="20h"]>rect,
+  [data-original-title*="21h"]>rect {
     fill: #008081;
     stroke: #008081;
   }
 
-  [data-original-title*="22h"] > rect,
-  [data-original-title*="23h"] > rect,
-  [data-original-title*="24h"] > rect {
+  [data-original-title*="22h"]>rect,
+  [data-original-title*="23h"]>rect,
+  [data-original-title*="24h"]>rect {
     fill: #006c6e;
     stroke: #006c6e;
   }
