@@ -9,6 +9,6 @@ Enable a Dark Mode in 42 network intranet with Stylus web plugin
 - Download the theme there => [userstyles.world](https://userstyles.world/style/2250/42dark)
 
 Do not hesitate to create PR Issue with the ``css class selector`` or a ``screenshot`` of the class element through the web inspector tool to improve the theme 🎉.
-![(example here)](./doc/img/example.png)
+[(example here)](./doc/img/example.png)
 
 ![42Dark](./doc/img/screen.png)
