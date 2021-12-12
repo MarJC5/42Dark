@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20211207.13.39
+@version      20211212.13.34
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
@@ -14,10 +14,10 @@ url-prefix("https://companies.intra.42.fr/en/users/jmartin"),
 url-prefix("https://meta.intra.42.fr/"),
 url-prefix("https://shop.intra.42.fr/"),
 url-prefix("https://companies.intra.42.fr") {
-  /*
-* MAIN BACKGROUND 
-*/
 
+  /*
+  * MAIN BACKGROUND 
+  */
   .modal-content,
   body {
     background-color: rgba(41, 45, 57, 0.96);
@@ -29,9 +29,8 @@ url-prefix("https://companies.intra.42.fr") {
   }
 
   /*
-* WHITE TEXT 
-*/
-
+  * WHITE TEXT 
+  */
   [aria-labelledby="Project options"]>li>a:hover,
   [aria-labelledby="Project options"]>li>a,
   .show-offer .show-right,
@@ -96,14 +95,15 @@ url-prefix("https://companies.intra.42.fr") {
   .profile-title,
   .main-navbar .main-navbar-user-nav>.dropdown>a>span,
   .main-navbar .main-navbar-search::before,
+  .btn.btn-danger.checkbox-label.light-bg,
+  .btn.btn-danger.negative,
   #project-show .project-notifications .project-item.reminder {
     color: #fff;
   }
 
   /*
-* TEXT COLOR & DECORATION
-*/
-
+  * TEXT COLOR & DECORATION
+  */
   .inline-search-form input,
   .btn-info,
   .project-item-lighteable,
@@ -210,9 +210,8 @@ url-prefix("https://companies.intra.42.fr") {
   }
 
   /*
-* USER PROFILE & COAL
-*/
-
+  * USER PROFILE & COAL
+  */
   .user-banner {
     margin: 0 38px !important;
   }
@@ -243,9 +242,8 @@ url-prefix("https://companies.intra.42.fr") {
   }
 
   /*
-* BACKGROUND-COLOR/BORDER => CARD, SECTION ETC...
-*/
-
+  * BACKGROUND-COLOR/BORDER => CARD, SECTION ETC...
+  */
   .shop-item .shop-item--image,
   .main-navbar {
     background-color: #292d39;
@@ -432,9 +430,8 @@ url-prefix("https://companies.intra.42.fr") {
   }
 
   /*
-* LOGTIME 
-*/
-
+  * LOGTIME 
+  */
   [data-toggle="tooltip"]>rect {
     fill: #00babc;
     stroke: #00babc;
