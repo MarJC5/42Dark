@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20220116.09.51
+@version      20220116.09.56
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
-@license      MIT
+@license      No License
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://profile.intra.42.fr/"),
@@ -285,12 +285,14 @@ url-prefix("https://companies.intra.42.fr") {
 		background-color: #292d39;
 	}
 
+	.team-subtitle>.btn-block,
 	.achievement-item.stack .achievement-item--container,
 	.achievement-item .achievement-item--container,
 	.team-item .team-repo .input-group input {
 		border-color: #323f4b;
 	}
 
+	.team-subtitle>.btn-block,
 	.container-breadcrumb .breadcrumb,
 	.app-sidebar-right,
 	#coalition-scores .table-striped>tbody>tr:nth-of-type(2n + 1) {
