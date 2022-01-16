@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20220106.16.21
+@version      20220116.09.51
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
-@license      MIT License
+@license      MIT
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://profile.intra.42.fr/"),
@@ -31,6 +31,8 @@ url-prefix("https://companies.intra.42.fr") {
 	/*
 	* WHITE TEXT 
 	*/
+	.marked-title,
+	.scale-div,
 	[aria-labelledby="Project options"]>li>a:hover,
 	[aria-labelledby="Project options"]>li>a,
 	.show-offer .show-right,
@@ -104,6 +106,8 @@ url-prefix("https://companies.intra.42.fr") {
 	/*
 	* TEXT COLOR & DECORATION
 	*/
+	.btn.btn-danger.light-bg:hover,
+	.btn.btn-danger.on-active:not(.active),
 	.inline-search-form input,
 	.btn-info,
 	.project-item-lighteable,
@@ -209,6 +213,7 @@ url-prefix("https://companies.intra.42.fr") {
 		margin: 20px 0;
 	}
 
+
 	/*
 	* USER PROFILE & COAL
 	*/
@@ -244,6 +249,7 @@ url-prefix("https://companies.intra.42.fr") {
 	/*
 	* BACKGROUND-COLOR/BORDER => CARD, SECTION ETC...
 	*/
+	.scale-div,
 	.shop-item .shop-item--image,
 	.main-navbar {
 		background-color: #292d39;
@@ -254,6 +260,7 @@ url-prefix("https://companies.intra.42.fr") {
 		border-right: 2px solid #323f4b;
 	}
 
+	.scale-question-answers,
 	[aria-labelledby="Project options"],
 	.feedback-comment-item,
 	.broadcasts-filters-dropdown-menu,
@@ -290,6 +297,7 @@ url-prefix("https://companies.intra.42.fr") {
 		background: #323f4b;
 	}
 
+	#scale_team_comment,
 	#feedback_comment,
 	#broadcasts-container,
 	.notification-item:hover,
@@ -305,8 +313,9 @@ url-prefix("https://companies.intra.42.fr") {
 		background-color: rgb(60, 76, 90) !important;
 	}
 
+	#scale_team_comment,
 	.search-item.search-user-item {
-		border-width: 3px;
+		border-width: 1px;
 		border-color: #323f4b;
 	}
 
@@ -321,11 +330,24 @@ url-prefix("https://companies.intra.42.fr") {
 		background: #00babc;
 	}
 
-	.btn.btn-danger {
+	.btn .btn-danger {
 		border-radius: 3px;
 		background: #d8636f !important;
 	}
 
+	.btn.btn-danger.light-bg {
+		background-color: rgba(216, 99, 111, 0.3) !important;
+	}
+
+	.checkbox-input:checked+.checkbox-label.btn-danger,
+	.checkbox-input:checked+.checkbox-label.btn-danger:hover {
+		background-color: rgba(216, 99, 111, 1) !important;
+	}
+
+
+
+	#scale_team_comment,
+	.search-item.search-user-item,
 	#feedback_comment,
 	.btn-info.btn-companies,
 	.btn-default,
@@ -429,6 +451,11 @@ url-prefix("https://companies.intra.42.fr") {
 	.Select--single>.Select-control .Select-value,
 	.Select-placeholder {
 		border-radius: 0;
+	}
+
+	.scale-final-submit {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
 	/*
