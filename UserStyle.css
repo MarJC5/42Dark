@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20220118.12.33
+@version      20220118.15.50
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
@@ -30,6 +30,8 @@ url-prefix("https://companies.intra.42.fr") {
 	/*
 	* WHITE TEXT 
 	*/
+
+	.container-item .text-center span,
 	.marked-title,
 	.scale-div,
 	[aria-labelledby="Project options"]>li>a:hover,
