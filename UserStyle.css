@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         42Dark
-@version      20220117.09.27
+@version      20220118.12.33
 @namespace    userstyles.world/user/marjc5
 @description  This style will enable a Dark Mode in 42 network intranet.
 @author       marjc5
@@ -236,6 +236,15 @@ url-prefix("https://companies.intra.42.fr") {
 		text-decoration: none;
 	}
 
+	.coalition-index-bg::before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		background-color: rgba(41, 45, 57, 0.7);
+	}
+
 	.profile-banner::before,
 	.user-column::before {
 		content: "";
@@ -345,8 +354,6 @@ url-prefix("https://companies.intra.42.fr") {
 	.checkbox-input:checked+.checkbox-label.btn-danger:hover {
 		background-color: rgba(216, 99, 111, 1) !important;
 	}
-
-
 
 	#scale_team_comment,
 	.search-item.search-user-item,
