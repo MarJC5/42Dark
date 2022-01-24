@@ -397,7 +397,8 @@ url-prefix("https://companies.intra.42.fr") {
 		background: linear-gradient(to right, #2dd57a, #00babc);
 	}
 
-	#project-show .project-status-box[data-status="fail"] {
+	#project-show .project-status-box[data-status="fail"],
+	#project-show .project-status-box[data-status="forbidden"] {
 		background: linear-gradient(to right, #ff512f, #dd2476);
 	}
 
